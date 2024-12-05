@@ -1,0 +1,117 @@
+/* Estilo general para el body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #023695, #06628c);
+    border: none;
+    border-radius: none;
+}
+
+/* Estilos de la barra de navegación */
+/* Estilos para el contenedor del menú */
+nav {
+    background-color: #023695;
+    padding: 5px;
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilos para los elementos de la lista */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox para alinear horizontalmente */
+}
+
+/* Estilos para los elementos de la lista */
+nav ul li {
+    margin-right: 9px; /* Separación de 6px entre los elementos */
+}
+
+/* Estilos para los enlaces dentro del menú */
+nav ul li a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 10px 12px;
+    display: block;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+nav ul li a:hover {
+    background-color: #575757; /* Color al pasar el mouse */
+}
+
+.profile {
+    display: flex;
+    align-items: flex-end;
+
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20 /* Espaciado entre la imagen y el nombre */
+}
+
+/* Estilo de la imagen circular */
+.profile-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+}
+
+/* Título del perfil */
+
+.name {
+    font-size: 80px; /* Tamaño más grande para el nombre */
+    color: #ce0404;
+    line-height: 0.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: right; /* Alinea el texto a la derecha */
+    flex: 1; /* Asegura que el nombre ocupe el espacio restante */
+    padding-left: 20px; /* Espacio entre la imagen y el texto */
+
+}
+.apellidos{
+    line-height: 0.5;
+    color: #ff9800;
+    border: #000000, 1px;
+    
+}
+.card-container {
+    display: flex; /* Usa flexbox para colocar las tarjetas lado a lado */
+    gap: 3px; /* Define el margen entre las tarjetas */
+    padding: 10px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: #f4f4f4; /* Fondo de la tarjeta */
+    border: 1px solid #ddd; /* Borde de la tarjeta */
+    padding: 20px;
+    width: 48%; /* Ajusta el ancho de las tarjetas */
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+}
+
+/* Estilos adicionales para las tarjetas */
+.card h2 {
+    color: #333;
+}
+
+.card p {
+    color: #555;
+}
+
